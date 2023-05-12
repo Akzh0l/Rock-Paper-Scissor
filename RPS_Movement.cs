@@ -43,23 +43,6 @@ public class RPS_Movement : MonoBehaviour
         GetScreenSizes();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        //If the game is not paused
-        if (levelManager.isGameOn)
-        {
-            //Check if we have a target or not (If not, then try to find)
-            if (!isTargetLocked)
-            {
-                FindNewTarget();
-            }
-
-            MoveAround();
-        }
-       
-    }
-
 
     void MoveAround()
     {
